@@ -23,7 +23,7 @@ model Record {
   text     String
   amount   Float
   category String   @default("Other")
-  data     DateTime @default(now())
+  date     DateTime @default(now())
   userId   String
   user     User     @relation(fields: [userId], references: [clerkUserId], onDelete: Cascade)
 
