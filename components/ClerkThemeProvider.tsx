@@ -9,7 +9,9 @@ interface ClerkThemeProviderProps {
     children: React.ReactNode;
 }
 
-export default function ({ children }: ClerkThemeProviderProps) {
+export default function ClerkThemeProvider({
+    children,
+}: ClerkThemeProviderProps) {
     const { theme } = useTheme();
 
     return (
